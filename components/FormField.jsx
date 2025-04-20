@@ -1,4 +1,7 @@
+"use client";
+
 import { Controller } from "react-hook-form";
+import { useState } from "react";
 
 import {
   FormItem,
@@ -15,6 +18,9 @@ const FormField = ({
   placeholder,
   type = "text",
 }) => {
+  const [showPassword, setShowPassword] = useState(false);
+  const isPassword = type === "password";
+
   return (
     <Controller
       control={control}
@@ -23,12 +29,23 @@ const FormField = ({
         <FormItem>
           <FormLabel className="label">{label}</FormLabel>
           <FormControl>
-            <Input
-              className="input"
-              type={type}
-              placeholder={placeholder}
-              {...field}
-            />
+            <div className="relative">
+              <Input
+                className="input pr-10"
+                type={isPassword && showPassword ? "text" : type}
+                placeholder={placeholder}
+                {...field}
+              />
+              {isPassword && (
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((prev) => !prev)}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-sm"
+                >
+                  {showPassword ? "🙈" : "👁️"}
+                </button>
+              )}
+            </div>
           </FormControl>
           <FormMessage />
         </FormItem>

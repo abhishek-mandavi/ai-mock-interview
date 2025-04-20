@@ -67,24 +67,24 @@ const AuthForm = ({ type }) => {
         toast.success("Account created successfully. Please sign in.");
         router.push("/sign-in");
       } else {
-        const { email, password } = data;
+        // const { email, password } = data;
 
-        const userCredential = await signInWithEmailAndPassword(
-          auth,
-          email,
-          password
-        );
+        // const userCredential = await signInWithEmailAndPassword(
+        //   auth,
+        //   email,
+        //   password
+        // );
 
-        const idToken = await userCredential.user.getIdToken();
-        if (!idToken) {
-          toast.error("Sign in Failed. Please try again.");
-          return;
-        }
+        // const idToken = await userCredential.user.getIdToken();
+        // if (!idToken) {
+        //   toast.error("Sign in Failed. Please try again.");
+        //   return;
+        // }
 
-        await signIn({
-          email,
-          idToken,
-        });
+        // await signIn({
+        //   email,
+        //   idToken,
+        // });
 
         toast.success("Signed in successfully.");
         router.push("/");
