@@ -30,14 +30,14 @@ const InterviewCard = ({
       <div className='card-interview'>
         <div>
           <div className="absolute top-0 right-0 w-fit px-4 py-2 rounded-bl-lg">
-           <p className='badge-text '>{normalizedType}</p>
+            <p className='badge-text '>{normalizedType}</p>
           </div>
 
           <Image src={getRandomInterviewCover()} 
-           alt="cover-image"
-           width={90}
-           height={90}
-           className="rounded-full object-fit size-[90px]"
+            alt="cover-image"
+            width={90}
+            height={90}
+            className="rounded-full object-fit size-[90px]"
           
           />
 
@@ -61,22 +61,22 @@ const InterviewCard = ({
           </div>
 
           <p className="line-clamp-2 mt-5">
-            {feedback?.finalAssessment ||
-              "You haven't taken this interview yet. Take it now to improve your skills."}
-          </p>
+            {feedback?.finalAssessment || "You haven't taken this interview yet. Take it now to improve your skills."}
+          </p> 
         </div>
 
         <div className="flex flex-row justify-between">
           <DisplayTechIcons techStack={techstack} />
 
           <Button className="btn-primary">
-           <Link href={
-             feedback
-             ? `/interview/${interviewId}/feedback`
-             : `/interview/${interviewId}`
-            }>
-             {feedback ? "Check Feedback" : "View Interview"}
-           </Link>
+            <Link 
+              href={
+                feedback
+                ? `/interview/${interviewId}/feedback`
+                : `/interview/${interviewId}`
+              }>
+              {feedback ? "Check Feedback" : "View Interview"}
+            </Link>
           </Button>
         </div>
 
