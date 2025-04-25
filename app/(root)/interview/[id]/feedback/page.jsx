@@ -28,8 +28,8 @@ const Feedback = async ({ params }) => {
         <section className="section-feedback">
             <div className="flex flex-row justify-center">
                 <h1 className="text-4xl font-semibold">
-                Feedback on the Interview -{" "}
-                <span className="capitalize">{interview.role}</span> Interview
+                    Feedback on the Interview -{" "}
+                    <span className="capitalize">{interview.role}</span> Interview
                 </h1>
             </div>
 
@@ -69,7 +69,7 @@ const Feedback = async ({ params }) => {
                 {feedback?.categoryScores?.map((category, index) => (
                 <div key={index}>
                     <p className="font-bold">
-                    {index + 1}. {category.name} ({category.score}/100)
+                        {index + 1}. {category.name} ({category.score}/100)
                     </p>
                     <p>{category.comment}</p>
                 </div>
@@ -79,18 +79,18 @@ const Feedback = async ({ params }) => {
             <div className="flex flex-col gap-3">
                 <h3>Strengths</h3>
                 <ul>
-                {feedback?.strengths?.map((strength, index) => (
-                    <li key={index}>{strength}</li>
-                ))}
+                    {feedback?.strengths?.map((strength, index) => (
+                        <li key={index}>{strength}</li>
+                    ))}
                 </ul>
             </div>
 
             <div className="flex flex-col gap-3">
                 <h3>Areas for Improvement</h3>
                 <ul>
-                {feedback?.areasForImprovement?.map((area, index) => (
-                    <li key={index}>{area}</li>
-                ))}
+                    {feedback?.areasForImprovement?.map((area, index) => (
+                        <li key={index}>{area}</li>
+                    ))}
                 </ul>
             </div>
 
