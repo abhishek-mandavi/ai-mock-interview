@@ -29,8 +29,9 @@ A cutting-edge AI-powered mock interview platform built with **Next.js**, integr
 
 ## 📸 Screenshots
 
-> ![Screenshot (27)](https://github.com/user-attachments/assets/9554993d-d04f-42a5-9366-68a058c10f8c)
-> ![Screenshot (28)](https://github.com/user-attachments/assets/d07631a8-a5d2-401d-b51e-d5713ce21160)
+> ![Screenshot (30)](https://github.com/user-attachments/assets/da5ffb78-6983-408e-9f7b-c495afa3b3b5)
+> 
+
 
 
 ---
@@ -49,20 +50,6 @@ NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_workflow_id
 NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
 GOOGLE_GEMINI_API_KEY=your_gemini_api_key
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
