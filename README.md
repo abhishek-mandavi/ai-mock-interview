@@ -1,3 +1,67 @@
+# AI Mock Interview
+
+A cutting-edge AI-powered mock interview platform built with **Next.js**, integrating real-time voice interactions using **Vapi AI** and feedback generation using **Google Gemini**. Designed for users to practice technical interviews and receive AI-generated feedback instantly.
+
+## 🚀 Features
+
+- 🎤 **Voice-based interviews** powered by [Vapi AI](https://vapi.ai)
+- 🤖 Dynamic AI-generated feedback using **Google Gemini**
+- 🛠️ Custom interview flows with question sets
+- 💬 Real-time transcript and voice recognition
+- 🧠 Smart scoring and evaluation system (using **Zod** validation)
+- 📦 Built with modern tools: `Next.js`, `Firebase`, `Tailwind CSS`, `shadcn/ui`
+
+---
+
+## 🧰 Tech Stack
+
+| Tech           | Description                            |
+|----------------|----------------------------------------|
+| **Next.js**    | Fullstack React framework              |
+| **Firebase**   | Auth and database for user/session     |
+| **Tailwind CSS** | Utility-first styling                |
+| **Vapi AI**    | AI-powered voice calling SDK           |
+| **shadcn/ui**  | Modern, accessible UI component system |
+| **Google Gemini** | Generative AI for feedback/analysis |
+| **Zod**        | Type-safe schema validation            |
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of the interface or demo GIFs here
+
+---
+
+## 🧪 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/ai-mock-interview.git
+cd ai-mock-intervie
+
+
+
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_workflow_id
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+GOOGLE_GEMINI_API_KEY=your_gemini_api_key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
