@@ -29,7 +29,9 @@ A cutting-edge AI-powered mock interview platform built with **Next.js**, integr
 
 ## 📸 Screenshots
 
-> Add screenshots of the interface or demo GIFs here
+> ![Screenshot (27)](https://github.com/user-attachments/assets/9554993d-d04f-42a5-9366-68a058c10f8c)
+> ![Screenshot (28)](https://github.com/user-attachments/assets/d07631a8-a5d2-401d-b51e-d5713ce21160)
+
 
 ---
 
